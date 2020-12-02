@@ -46,22 +46,22 @@ const routes = [
       {
         path: 'list',
         name: 'order-list',
-        component: () => import('../views/OrderList.vue')
+        component: () => import('../views/OrderList')
       },
       {
         path: 'confirm',
         name: 'order-confirm',
-        component: () => import('../views/OrderConfirm.vue')
+        component: () => import('../views/OrderConfirm')
       },
       {
         path: 'pay',
         name: 'order-pay',
-        component: () => import('../views/OrderPay.vue')
+        component: () => import('../views/OrderPay')
       },
       {
         path: 'alipay',
         name: 'alipay',
-        component: () => import('../views/Alipay.vue')
+        component: () => import('../views/Alipay')
       }
     ]
   }
