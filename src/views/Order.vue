@@ -1,10 +1,24 @@
 <template>
-  <div>order</div>
+  <div>
+    <router-view></router-view>
+    <service-bar></service-bar>
+    <nav-footer></nav-footer>
+  </div>
 </template>
 <script>
-export default {
-  name: 'order'
-}
+  import ServiceBar from '@/components/ServiceBar'
+  import NavFooter from '@/components/public/Footer'
+  export default{
+    name:'order',
+    data(){
+      return {
+        title:'',
+        tip:''
+      }
+    },
+    components:{
+      ServiceBar,
+      NavFooter
+    }
+  }
 </script>
-<style lang="scss" scope>
-</style>
